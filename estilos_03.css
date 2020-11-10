@@ -1,0 +1,212 @@
+/********** HOME ***********/
+
+@media (max-width: 991px) {
+    #H_Productos h1 {
+        font-size: 4rem;
+    }
+    #H_Productos p {
+        font-size: 1.3rem;
+    }
+}
+
+
+/***************SECCION 02 - PRODUCTOS ****************/
+
+.Titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.B_01 {
+    width: 35%;
+    height: 0.2rem;
+    background-color: #ffffff;
+}
+
+#T_Productos {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#T_Productos h1 {
+    text-align: center;
+    width: 30%;
+    font-size: 3.5rem;
+}
+
+#T_Productos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#T_Productos p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.ListaProd {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.Producto {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    opacity: 0.3;
+    margin: 0rem 1rem;
+}
+
+.Producto:hover {
+    transition: 0.2s;
+    opacity: 1;
+    transform: translateY(-1rem);
+}
+
+.Producto a .F00 {
+    height: 20rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.ListaProd .Producto:nth-child(1) .F00 {
+    background-image: url(./img/Cafe_03.jpg);
+}
+
+.ListaProd .Producto:nth-child(2) .F00 {
+    background-image: url(./img/Cafe_11.jpg);
+}
+
+.ListaProd .Producto:nth-child(3) .F00 {
+    background-image: url(./img/Cafe_08.jpg);
+}
+
+.ListaProd .Producto:nth-child(4) .F00 {
+    background-image: url(./img/Cafe_04.jpg);
+}
+
+.Producto p {
+    text-align: center;
+    background-color: #1b1b1b;
+    padding: 1rem 0rem;
+}
+
+@media (max-width: 991px) {
+    #T_Productos h1 {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #T_Productos {
+        margin: 4rem 0rem;
+    }
+    .ListaProd {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/************ LISTA DE PRODUCTOS ************/
+
+#T_LProductos {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#T_LProductos h1 {
+    text-align: center;
+    width: 40%;
+    font-size: 3.5rem;
+}
+
+.ListaProd02 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+}
+
+.ListaProd02 .Producto:nth-child(1) .F00 {
+    background-image: url(./img/Cafe_03.jpg);
+}
+
+.ListaProd02 .Producto:nth-child(2) .F00 {
+    background-image: url(./img/Cafe_11.jpg);
+}
+
+.ListaProd02 .Producto:nth-child(3) .F00 {
+    background-image: url(./img/Cafe_08.jpg);
+}
+
+.ListaProd02 .Producto:nth-child(4) .F00 {
+    background-image: url(./img/Cafe_04.jpg);
+}
+
+.ListaProd02 .Producto:nth-child(5) .F00 {
+    background-image: url(./img/Cafe_03.jpg);
+}
+
+.ListaProd02 .Producto:nth-child(6) .F00 {
+    background-image: url(./img/Cafe_03.jpg);
+}
+
+.Detalle {
+    background-color: #1b1b1b;
+    text-align: center;
+    height: 5rem;
+}
+
+.Producto:hover .Detalle a {
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.Detalle:hover a {
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.Detalle p {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+
+.Detalle a {
+    color: #ecb767;
+    text-decoration: none;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    #T_LProductos {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    #T_LProductos h1 {
+        font-size: 3rem;
+        width: 75%;
+    }
+    .ListaProd02 {
+        margin-bottom: 4rem;
+    }
+}

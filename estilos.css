@@ -1,0 +1,829 @@
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+
+/******FUNCIONES********/
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+}
+
+.boton:hover {
+    background-color: rgba(156, 123, 85, 0.5);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.modal {
+    width: 100%;
+    top: -20%;
+}
+
+.modal-header {
+    color: #ffffff;
+    background-color: #30261d;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.modal-content {
+    border-radius: 2rem !important;
+}
+
+.modal-body p {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.modal-body .Opciones {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: underline;
+}
+
+span img {
+    height: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .modal {
+        top: 0;
+    }
+}
+
+
+/************************ HOME BARRA *********************/
+
+.HomeBar {
+    width: auto;
+    height: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    right: 3rem;
+    top: 2rem;
+}
+
+.HomeBar a p {
+    margin: 0rem;
+}
+
+.HomeBar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgba(46, 199, 140, 1);
+    border-radius: 5rem;
+    border-color: #ffffff;
+    border-style: solid;
+    width: 6rem;
+    height: 6rem;
+}
+
+.HomeBar img {
+    height: 2.5rem;
+}
+
+.HomeBar a:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    border: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .HomeBar {
+        top: 0rem;
+        right: 1rem;
+    }
+    .HomeBar a {
+        transform: scale(0.6);
+        background-color: rgba(46, 199, 140, 0);
+    }
+}
+
+@media (max-height: 450px) {
+    .HomeBar {
+        top: 0;
+    }
+}
+
+
+/**************** HOME PAGE *******************/
+
+#HomePage {
+    height: 100vh;
+}
+
+.NavBar {
+    height: 100vh;
+    width: 30.5%;
+    background-color: rgb(15, 15, 15);
+}
+
+.NavBar ul {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.NavBar ul li {
+    height: 100%;
+}
+
+.NavBar ul,
+li {
+    padding: 0rem;
+    width: 100%;
+    margin: 0rem;
+}
+
+.NavBar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    height: 13.33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+    background-color: rgba(216, 189, 148, 0);
+}
+
+.NavBar ul li button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600;
+    height: 13.33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+}
+
+.NavBar ul li a:hover {
+    background-color: rgb(216, 189, 148);
+    transition: 0.2s;
+}
+
+.NavBar ul li:nth-child(2) a:hover {
+    color: #000000;
+    font-weight: 600;
+    transform: scaleX(1.04) translateX(2.4rem);
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+}
+
+.NavBar ul li:nth-child(3) a:hover {
+    color: #000000;
+    font-weight: 600;
+    transform: scaleX(1.0) translateX(1.6rem);
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+}
+
+.NavBar ul li:nth-child(4) a:hover {
+    color: #000000;
+    font-weight: 600;
+    transform: scaleX(1.0) translateX(1.6rem);
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+}
+
+.NavBar ul li:nth-child(5) a:hover {
+    color: #000000;
+    font-weight: 600;
+    transform: scaleX(1.0) translateX(1.4rem);
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+}
+
+.NavBar ul li:nth-child(6) a:hover {
+    color: #000000;
+    font-weight: 600;
+    transform: scaleX(1) translateX(1.4rem);
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+}
+
+.NavBar ul li button {
+    font-weight: 700;
+    background-color: rgba(104, 72, 35, 0.8);
+    color: #ffffff;
+    clip-path: polygon(0 0, 100% 0%, 97.5% 100%, 0% 100%);
+    transform: scaleX(1.02);
+    border: 0rem;
+    transition: 0.2s;
+}
+
+.NavBar ul li button:hover {
+    font-weight: 700;
+    background-color: rgb(224, 145, 55);
+    transform: scaleX(1.02) translateX(0.5rem);
+}
+
+.NavBar ul li:hover {
+    font-weight: 700;
+    background-color: rgb(224, 145, 55);
+    transform: scaleX(1.1) translateX(1rem);
+}
+
+.NavBar ul li:nth-child(1):hover {
+    background-color: rgba(104, 72, 35, 0);
+    transform: translateX(0rem);
+}
+
+.NavBar ul li:nth-child(7):hover {
+    background-color: rgba(104, 72, 35, 0);
+}
+
+@media (max-width: 1200px) {
+    .NavBar ul {
+        position: absolute;
+        background-color: rgb(15, 15, 15);
+    }
+    .NavBar ul li:nth-child(7) a {
+        transform: scaleX(1);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .NavBar ul li a {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .NavBar ul li button {
+        font-weight: 700;
+        font-size: 1.2rem;
+        background-color: rgba(104, 72, 35, 0.8);
+        color: #ffffff;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transform: scaleX(1);
+        border: 0rem;
+        transition: 0.2s;
+    }
+    .NavBar ul li button:hover {
+        background-color: rgb(224, 145, 55);
+        transform: scaleX(1) translateX(0rem);
+    }
+    .NavBar ul li:hover {
+        transform: scaleX(1) translateX(0rem);
+    }
+    .NavBar ul li a {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+    }
+    .NavBar ul li a:hover {
+        transform: scaleX(1) translateX(0rem) !important;
+    }
+}
+
+
+/****LOGO CONFIG*****/
+
+.NavBar ul li:nth-child(1) a {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.NavBar ul li:nth-child(1) a:hover {
+    background-color: #0f0f0f;
+}
+
+.NavBar ul li:nth-child(1) a:hover img {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+#Logo img {
+    height: 8rem;
+}
+
+@media (max-width: 991px) {
+    #Logo img {
+        margin-top: 1rem;
+        height: 6rem;
+    }
+}
+
+@media (max-height: 450px) {
+    #Logo img {
+        height: 4rem;
+    }
+    .NavBar ul li a {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+
+/****IMG HOME****/
+
+#ImgHome {
+    background-position: center;
+    background-size: cover;
+    padding: 0rem;
+    clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+    height: 100vh;
+    position: absolute;
+    width: 70%;
+    right: 0;
+    transition: 0.3s;
+    background-image: url(./img/Cafe_02.jpg);
+}
+
+.NavBar #ImgHome.uno {
+    background-image: url(./img/Cafe_02.jpg);
+}
+
+.NavBar #ImgHome.dos {
+    background-image: url(./img/dos.jpg);
+}
+
+.NavBar #ImgHome.tres {
+    background-image: url(./img/Cafe_08.jpg);
+}
+
+.NavBar #ImgHome.cuatro {
+    background-image: url(./img/cuatro.jpg);
+}
+
+
+/***************SECCION 02 - PRODUCTOS ****************/
+
+#T_Productos {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+#T_Productos h3 {
+    font-size: 2.5rem;
+}
+
+#T_Productos h1 {
+    text-align: center;
+    width: 30%;
+    font-size: 3.5rem;
+}
+
+#T_Productos p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.Titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.B_01 {
+    width: 32%;
+    height: 0.2rem;
+    background-color: #ffffff;
+}
+
+.ListaProd {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+    margin-bottom: 10rem;
+}
+
+.Producto {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    opacity: 0.3;
+    margin: 0rem 1rem;
+}
+
+.Producto:hover {
+    transition: 0.2s;
+    opacity: 1;
+    transform: translateY(-1rem);
+}
+
+.Producto a .F00 {
+    height: 20rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.ListaProd .Producto:nth-child(1) .F00 {
+    background-image: url(./img/Cafe_03.jpg);
+}
+
+.ListaProd .Producto:nth-child(2) .F00 {
+    background-image: url(./img/Cafe_11.jpg);
+}
+
+.ListaProd .Producto:nth-child(3) .F00 {
+    background-image: url(./img/Cafe_08.jpg);
+}
+
+.ListaProd .Producto:nth-child(4) .F00 {
+    background-image: url(./img/Cafe_04.jpg);
+}
+
+.Producto p {
+    text-align: center;
+    background-color: #1b1b1b;
+    padding: 1rem 0rem;
+}
+
+.VCatalogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.VCatalogo a {
+    height: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .VCatalogo {
+        padding-top: 2rem;
+    }
+    #T_Productos {
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #T_Productos h1 {
+        width: 60%;
+    }
+}
+
+
+/************ NOSOTROS PAGE **************/
+
+#NostorPage {
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-image: url(./img/Back_Cafe01.png);
+    background-size: cover;
+    text-align: right;
+    color: #ffffff;
+    margin: 4rem 0rem;
+}
+
+.InfoNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.InfoNosotros h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+#NostorPage h5 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+#NostorPage p {
+    padding-top: 1rem;
+    max-width: 60%;
+}
+
+#NostorPage a {
+    margin-top: 2rem;
+}
+
+.ImgNosotros {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ImgNosotros img:hover {
+    transition: 0.3s;
+    transform: scale(1.1) translateX(2rem);
+}
+
+.ImgNosotros img {
+    max-height: 50rem;
+}
+
+@media (max-width: 1200px) {
+    #NostorPage {
+        margin-top: 5rem;
+        background-image: none;
+        background-color: rgb(15, 15, 15);
+        /*height: 120vh;*/
+    }
+    .ImgNosotros {
+        display: flex;
+        justify-content: center;
+    }
+    .ImgNosotros img {
+        max-height: 40rem;
+        margin-top: 2rem;
+    }
+    .ImgNosotros img:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    .InfoNosotros {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .InfoNosotros p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 600px) {
+    .ImgNosotros img {
+        max-height: 30rem;
+    }
+}
+
+
+/*********** NUESTRA TIERRA ***********/
+
+#VisitanosPage {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0rem;
+}
+
+@media (max-width: 500px) {
+    #VisitanosPage {
+        height: 70rem;
+    }
+}
+
+.T_Visitanos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.T_Visitanos h1 {
+    text-align: center;
+    width: 25%;
+    font-size: 3.5rem;
+}
+
+.T_Visitanos h4 {
+    font-size: 1.8rem !important;
+}
+
+.ImagenesV {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 90%;
+    align-items: center;
+}
+
+.Fila01 {
+    height: auto;
+    width: 100%;
+}
+
+.Foto01 {
+    background-image: url(./img/Tierra_09.jpg);
+    background-size: cover;
+    width: 30rem;
+    background-position: center;
+    margin-right: 0.6rem;
+}
+
+.Foto01:hover {
+    transition: 0.2s;
+    transform: scale(1.05) translateX(-0.5rem) translateY(-1.3rem);
+}
+
+.Foto02 {
+    background-image: url(./img/Tierra_04.jpg);
+    background-size: cover;
+    height: 12rem;
+    background-position: center;
+    margin-bottom: 0.6rem;
+}
+
+.Foto02:hover {
+    transition: 0.2s;
+    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+}
+
+.Foto03 {
+    background-image: url(./img/Tierra_02.jpg);
+    background-size: cover;
+    height: 12rem;
+    background-position: center;
+}
+
+.Foto03:hover {
+    transition: 0.2s;
+    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+}
+
+.Foto04 {
+    background-image: url(./img/Tierra_08.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 0.6rem;
+}
+
+.Foto04:hover {
+    transition: 0.2s;
+    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+}
+
+.Fila02 {
+    height: auto;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.Foto05 {
+    background-image: url(./img/Tierra_05.jpg);
+    background-size: cover;
+    height: 15rem;
+    background-position: center;
+}
+
+.Foto05:hover {
+    transition: 0.2s;
+    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+}
+
+.Foto06 {
+    background-image: url(./img/Tierra_14.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0rem 0.6rem;
+}
+
+.Foto06:hover {
+    transition: 0.2s;
+    transform: scale(1.1) translateX(-1.3rem) translateY(-1.3rem);
+}
+
+.Foto07 {
+    background-image: url(./img/Tierra_13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Foto07:hover {
+    transition: 0.2s;
+    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+}
+
+.VerGaleria {
+    display: flex;
+    justify-content: center;
+    width: 84%;
+}
+
+@media (max-width: 991px) {
+    .T_Visitanos h1 {
+        width: 60%;
+    }
+}
+
+
+/********** CONTACTANOS **********/
+
+#ContactoPage {
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Barra {
+    width: 90%;
+    height: 0.1rem;
+    background-color: #ffffff;
+}
+
+.Datos {
+    width: 80%;
+}
+
+.Datos h1 {
+    font-weight: 700;
+}
+
+.P_Direccion {
+    margin-top: 1.5rem;
+}
+
+.Datos img {
+    max-height: 10rem;
+}
+
+.LogoFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .Datos {
+        text-align: center;
+    }
+    .Datos img {
+        max-height: 8rem;
+        margin-bottom: 2rem;
+    }
+    .P_Direccion {
+        margin-top: -1.5rem;
+    }
+    #ContactoPage {
+        height: auto;
+    }
+}
+
+.PieRedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 8rem;
+}
+
+.PieRedes .Redes {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
+
+.PieRedes .Redes a:hover {
+    transition: 0.2s;
+    transform: scale(1.5) translateY(-0.5rem);
+}
+
+.PieRedes .Redes a img {
+    max-height: 2.5rem;
+}

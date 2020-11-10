@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos_05.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <title>Café Camargo Perú - Productos</title>
+</head>
+
+<body>
+    <div class="BarraSup">
+        <div class="row BarNav">
+            <div class="col-12 col-md-2 col-lg-7 LogoIn">
+                <a href=""><img src="./img/LogoCamargo.png" alt=""></a>
+            </div>
+            <div class="col-2 col-md-2 col-lg-1 Links"><a href="">Nosotros</a></div>
+            <div class="col-2 col-md-2 col-lg-1 Links"><a href="">Productos</a></div>
+            <div class="col-2 col-md-2 col-lg-1 Links"><a href="">Nuestra Tierra</a></div>
+            <div class="col-2 col-md-2 col-lg-1 Links"><a href="">Contáctanos</a></div>
+            <div class="col-2 col-md-2 col-lg-1 Carrito">
+                <a href=""><img src="./img/Carrito.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!--------------- ORDEN DE PEDIDO ------------------->
+        <div class="row" id="OrdenPedido">
+            <div class="row justify-content-around T_Orden">
+                <div class="col-md-11 col-xl-10">
+                    <h1>ORDEN DE COMPRA</h1>
+                    <div class="Barra01"></div>
+                </div>
+            </div>
+            <div class="row justify-content-around SecOrden">
+                <div class="col-md-12 col-lg-6 col-xl-6">
+
+                    <div class="Cliente">
+                        <h2>Datos del Cliente</h2>
+                        <div class="doble">
+                            <p>Nombre Completo o Razón Social: </p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="doble">
+                            <p>Dirección (Para envío): </p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="doble">
+                            <p>Teléf. Fijo o Celular: </p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="doble">
+                            <p>Correo Electrónico: </p>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+
+                    <div class="CarritoTabla">
+                        <h2>Carrito</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Importe</th>
+                                    <th scope="col">Quitar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td class="Producto">
+                                        <img src="./img/Cafe_03.jpg" alt="">
+                                        <p>Café Tostado Geisha (150g) - Molido - Gourmet</p>
+                                    </td>
+                                    <td><input class="Cantidad" type="number" name="" id=""></td>
+                                    <td>S/. 15</td>
+                                    <td><button type="submit"></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-xl-2 ImportePagar">
+                    <h2>Importe a Pagar</h2>
+                    <div class="doble02">
+                        <p>Subtotal: </p>
+                        <p>S/. 15 </p>
+                    </div>
+                    <div class="doble02">
+                        <p>Código de Dscto.: </p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="doble02">
+                        <p>Envío: </p>
+                        <p>S/. 15 </p>
+                    </div>
+                    <div class="doble02">
+                        <p>Descuento: </p>
+                        <p>S/. - </p>
+                    </div>
+                    <div class="Barra02"></div>
+                    <div class="doble02 Total">
+                        <h3>TOTAL</h3>
+                        <h3>S/. 30 </h3>
+                    </div>
+                    <div class="Acepto">
+                        <div class="doble02">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> Acepto haber revisado la Orden de Compra y estar conforme con los detalles.</label>
+                        </div>
+                    </div>
+                    <div class="Comprar">
+                        <input type="submit" value="COMPRAR">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------- CONTÁCTANOS ------------------->
+        <div class="row" id="ContactoPage">
+            <div class="Barra"></div>
+            <div class="row justify-content-around Datos">
+                <div class="col-12 col-lg-3 LogoFinal">
+                    <img src="./img/LogoCamargo.png" alt="">
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h1>CONTACTO</h1>
+                    <p><b>Correo Electrónico:</b> <br>ejemplo_ccamargo@hotmail.com</p>
+                    <p><b>Teléfono / Whatsapp:</b> <br>987 654 321</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <p class="P_Direccion"><br><b>Dirección:</b> <br>C.P. San Miguel de Eneñas<br>Distrito de Villa Rica<br>Oxapampa - Pasco</p>
+                </div>
+            </div>
+            <div class="row PieRedes">
+                <div class="Redes">
+                    <a href="https://www.facebook.com/camargocafe/">
+                        <img src="./img/Face.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./img/Instagram.png" alt="">
+                    </a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D51981228763%26fbclid%3DIwAR0IQj3vB8yiHjJJfeTmCaL_AjqTRHi1l1ALtZR--z334USsMladxWVz_e0&h=AT1DYE8oSgUqkK5gWIzTYCO3VK8n_ZDRnkGiiWYvj7ux-xZlP6qEKZKaM5pVQEacza5hocBz83qLbQf52lCxbSKhBikgId9jU2qh9SRXpAIIVj8kgyxsIrcKcstFjG3wmaScP-OZVcCpKFo7">
+                        <img src="./img/Whats.png" alt="">
+                    </a>
+                </div>
+                <p>Copyright &copy; 2020 <b>Café Camargo</b>. Todos los derechos Reservados.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx " crossorigin="anonymous "></script>
+</body>
+
+</html>
