@@ -1,939 +1,987 @@
-/************ GLOBAL *************/
-
-body {
-    background-color: rgb(15, 15, 15);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-}
-
-p {
-    color: white;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-li {
-    list-style: none;
-}
-
-
-/******FUNCIONES********/
-
-.boton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 2rem;
-}
-
-.boton:hover {
-    background-color: rgba(156, 123, 85, 0.5);
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.2s;
-}
-
-.Titulo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.B_01 {
-    width: 32%;
-    height: 0.2rem;
-    background-color: #ffffff;
-}
-
-
-/************************** HOME *****************************/
-
-#H_Nosotros {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./img/B_Nosotros.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(1, 1, 1, 0.5);
-    text-align: center;
-}
-
-#H_Productos {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./img/B_Producto.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(1, 1, 1, 0.5);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-#H_Visitanos {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./img/B_Visitanos.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(1, 1, 1, 0.5);
-    text-align: center;
-}
-
-.Portada h1 {
-    font-weight: 700;
-    font-size: 5rem;
-}
-
-.Portada p {
-    font-weight: 300;
-    font-size: 1.5rem;
-}
-
-.BarraSup {
-    width: 104%;
-    position: fixed;
-}
-
-.BarNav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(1, 1, 1, 0.8);
-    position: absolute;
-}
-
-.BarNav .Links a {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.Links:hover {
-    transition: 0.2s;
-    background-color: rgb(105, 83, 65);
-}
-
-.ON {
-    background-color: rgba(255, 162, 74, 0.8);
-}
-
-.ON:hover {
-    transition: 0.2s;
-    background-color: rgb(226, 157, 52);
-    transform: scale(1.1);
-}
-
-.LogoIn {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0.5rem 0rem;
-    padding-left: 6rem;
-}
-
-.Carrito {
-    padding-left: 0rem;
-    padding-right: 2rem;
-}
-
-.Carrito,
-.Links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.Carrito:hover {
-    transition: 0.2s;
-    transform: scale(1.2);
-}
-
-.LogoIn img {
-    height: 4rem;
-}
-
-.LogoIn:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(2.1rem);
-}
-
-.Carrito img {
-    height: 2.5rem;
-    padding: 0rem;
-}
-
-@media (max-width: 991px) {
-    .BarNav {
-        background-color: #000000;
+    /************ GLOBAL *************/
+    
+    body {
+        background-color: rgb(15, 15, 15);
     }
-    .LogoIn {
-        padding: 0rem;
+    
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    p {
+        color: white;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    
+    li {
+        list-style: none;
+    }
+    /******FUNCIONES********/
+    
+    .boton {
+        display: flex;
+        align-items: center;
         justify-content: center;
+        background-color: #ffffff;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: 0.5rem 2rem;
     }
-    .Links {
-        padding: 0.5rem 0rem;
+    
+    .boton:hover {
+        background-color: rgba(156, 123, 85, 0.5);
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.2s;
     }
-    .Carrito img {
-        height: 2rem;
-        padding-bottom: 0.2rem;
+    
+    .Titulo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .ON {
-        background-color: rgba(255, 162, 74, 0);
+    
+    .B_01 {
+        width: 32%;
+        height: 0.2rem;
+        background-color: #ffffff;
     }
+    /************************** HOME *****************************/
+    
+    #H_Nosotros {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./img/B_Nosotros.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(1, 1, 1, 0.5);
+        text-align: center;
+    }
+    
+    #H_Productos {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./img/B_Producto.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(1, 1, 1, 0.5);
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    #H_Visitanos {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./img/B_Visitanos.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(1, 1, 1, 0.5);
+        text-align: center;
+    }
+    
+    .Portada h1 {
+        font-weight: 700;
+        font-size: 5rem;
+    }
+    
+    .Portada p {
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    
+    .BarraSup {
+        width: 104%;
+        position: fixed;
+    }
+    
+    .BarNav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(1, 1, 1, 0.8);
+        position: absolute;
+    }
+    
+    .BarNav .Links a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    /******************/
+    
+    .BarraSup02 {
+        width: 100%;
+        position: relative;
+    }
+    
+    .BarNav02 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(1, 1, 1, 0.8);
+        position: relative;
+    }
+    
+    .BarNav02 .Links a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    
     .Links:hover {
         transition: 0.2s;
-        background-color: rgba(255, 160, 82, 0.8);
+        background-color: rgb(105, 83, 65);
     }
+    
+    .ON {
+        background-color: rgba(255, 162, 74, 0.8);
+    }
+    
     .ON:hover {
         transition: 0.2s;
         background-color: rgb(226, 157, 52);
-        transform: scale(1);
+        transform: scale(1.1);
     }
-    .Links:hover {
+    
+    .LogoIn {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0.5rem 0rem;
+        padding-left: 6rem;
+    }
+    
+    .Carrito {
+        padding-left: 0rem;
+        padding-right: 2rem;
+    }
+    
+    .Carrito,
+    .Links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Carrito:hover {
         transition: 0.2s;
-        background-color: rgba(255, 160, 82, 0.8);
+        transform: scale(1.2);
     }
+    
+    .LogoIn img {
+        height: 4rem;
+    }
+    
     .LogoIn:hover {
         transition: 0.2s;
-        transform: scale(1) translateX(0rem);
+        transform: scale(1.1) translateX(2.1rem);
     }
-    .Carrito {
-        padding-left: 2rem;
-        padding-right: 0rem;
+    
+    .Carrito img {
+        height: 2.5rem;
+        padding: 0rem;
     }
-}
-
-
-/**************** CLOSE HOME ******************/
-
-
-/*********************************** NOSOTROS *******************************/
-
-#MisionVision {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./img/B_MisionVision.png);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 4rem;
-}
-
-#MisionVision .col-11 {
-    margin: 4rem 0rem;
-}
-
-.Barra2 {
-    width: 60%;
-    height: 0.4rem;
-    background-color: #ffffff;
-}
-
-.Parte {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.Parte h1 {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-}
-
-.Parte p {
-    width: 80%;
-    font-size: 1.2rem;
-}
-
-.Parte:nth-child(3) {
-    align-items: flex-end;
-}
-
-.Parte:nth-child(3) p {
-    text-align: right;
-}
-
-@media (max-width: 1200px) {
+    
+    @media (max-width: 991px) {
+        .BarNav {
+            background-color: #000000;
+        }
+        .BarNav02 {
+            background-color: #000000;
+        }
+        .LogoIn {
+            padding: 0rem;
+            justify-content: center;
+        }
+        .Links {
+            padding: 0.5rem 0rem;
+        }
+        .Carrito img {
+            height: 2rem;
+            padding-bottom: 0.2rem;
+        }
+        .ON {
+            background-color: rgba(255, 162, 74, 0);
+        }
+        .Links:hover {
+            transition: 0.2s;
+            background-color: rgba(255, 160, 82, 0.8);
+        }
+        .ON:hover {
+            transition: 0.2s;
+            background-color: rgb(226, 157, 52);
+            transform: scale(1);
+        }
+        .Links:hover {
+            transition: 0.2s;
+            background-color: rgba(255, 160, 82, 0.8);
+        }
+        .LogoIn:hover {
+            transition: 0.2s;
+            transform: scale(1) translateX(0rem);
+        }
+        .Carrito {
+            padding-left: 2rem;
+            padding-right: 0rem;
+        }
+    }
+    /**************** CLOSE HOME ******************/
+    /*********************************** NOSOTROS *******************************/
+    
     #MisionVision {
-        margin-top: 4rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./img/B_MisionVision.png);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 4rem;
     }
+    
+    #MisionVision .col-11 {
+        margin: 4rem 0rem;
+    }
+    
     .Barra2 {
-        width: 80%;
-    }
-    #MisionVision h1 {
-        font-size: 3rem;
-    }
-    #MisionVision p {
-        font-size: 1rem
-    }
-}
-
-
-/** Características ***/
-
-#T_Caract {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6rem;
-}
-
-#T_Caract h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 4rem;
-    padding: 2rem 0rem;
-}
-
-#T_Caract .Barra {
-    height: 0.2rem;
-}
-
-@media (max-width: 600px) {
-    #T_Caract h1 {
-        font-size: 2.8rem;
-    }
-}
-
-#Caracteristicas {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 4rem;
-}
-
-#Caracteristicas p {
-    width: 65%;
-    font-size: 1.2rem;
-}
-
-#Caracteristicas02 {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#Caracteristicas02 p {
-    width: 65%;
-    font-size: 1.2rem;
-}
-
-.Seccion01,
-.Seccion02 {
-    width: 100%;
-}
-
-@media (max-width: 991px) {
-    #Caracteristicas,
-    #Caracteristicas02 {
-        display: block;
-    }
-}
-
-.Medio {
-    display: flex;
-    justify-content: center;
-}
-
-.Barra02 {
-    width: 80%;
-    height: 0.2rem;
-    background-color: #ffffff;
-}
-
-
-/*** Sección Function ***/
-
-.Seccion01,
-.Seccion02 {
-    margin: 0rem;
-}
-
-.Seccion01 h1 {
-    text-align: right;
-    padding-bottom: 1rem;
-}
-
-.Seccion01 p {
-    text-align: right;
-}
-
-.Seccion01 .img {
-    width: 100%;
-    height: 100%;
-}
-
-.Seccion01 .col-12:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.Seccion01 .col-12:nth-child(2) {
-    display: flex;
-    justify-content: flex-start;
-}
-
-#Caracteristicas img {
-    height: 27rem;
-}
-
-#Caracteristicas02 img {
-    height: 27rem;
-}
-
-.Seccion02 h1 {
-    text-align: left;
-    padding-bottom: 1rem;
-}
-
-.Seccion02 p {
-    text-align: left;
-}
-
-.Seccion02 .col-12:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.Seccion02 .col-12:nth-child(1) {
-    display: flex;
-    justify-content: flex-end;
-}
-
-@media (max-width: 991px) {
-    #Caracteristicas h1 {
-        text-align: center;
-    }
-    #Caracteristicas p {
-        text-align: justify;
-    }
-    #Caracteristicas img {
-        height: 20rem;
-    }
-    #Caracteristicas02 {
-        margin-top: 20rem;
-        margin-bottom: 24rem;
-    }
-    #Caracteristicas02 h1 {
-        text-align: center;
-    }
-    #Caracteristicas02 p {
-        text-align: justify;
-    }
-    #Caracteristicas02 img {
-        height: 20rem;
-    }
-    .Seccion01 .col-12:nth-child(2) {
-        justify-content: center;
-    }
-    .Seccion01 .col-12:nth-child(2) img {
-        margin-top: 0rem;
-    }
-    .Seccion01 .col-12:nth-child(1) {
-        align-items: center;
-    }
-    .Seccion02 .col-12:nth-child(1) {
-        justify-content: center;
-    }
-    .Seccion02 .col-12:nth-child(2) {
-        align-items: center;
-    }
-    .Seccion02 .col-12:nth-child(1) img {
-        position: absolute;
-        margin-top: 15rem;
-        height: 20rem;
-    }
-    .Barra02 {
-        height: 0rem;
-    }
-    .Separador {
+        width: 60%;
+        height: 0.4rem;
         background-color: #ffffff;
+    }
+    
+    .Parte {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .Parte h1 {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+    }
+    
+    .Parte p {
         width: 80%;
-        height: 0.1rem;
-        margin: 2rem 0rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .Seccion02 .col-12:nth-child(1) img {
-        position: absolute;
-        margin-top: 20rem;
-    }
-}
-
-
-/****************** NUESTRA TIERRA *********************/
-
-#Ubicacion {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url(./img/B_MisionVision.png);
-    background-position: center;
-    background-size: cover;
-    padding: 0rem;
-    margin: 4rem 0rem;
-}
-
-.T_Ubicacion {
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.T_Ubicacion h3 {
-    font-size: 2.5rem;
-}
-
-.T_Ubicacion h1 {
-    text-align: center;
-    font-size: 4rem;
-}
-
-.D_Ubicacion {
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.D_Ubicacion h1 {
-    font-size: 3.5rem;
-}
-
-.D_Ubicacion p {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-}
-
-.D_Ubicacion img {
-    height: 25rem;
-}
-
-.T_Descrip {
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.D_Ubicacion .col-12:nth-child(1) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.D_Ubicacion .col-12:nth-child(2) {
-    display: flex;
-    justify-content: center;
-}
-
-@media (max-width: 1500px) {
-    .D_Ubicacion .col-12:nth-child(1) h1 {
-        font-size: 2.5rem;
-    }
-    .D_Ubicacion .col-12:nth-child(1) p {
         font-size: 1.2rem;
     }
-    .D_Ubicacion .col-12:nth-child(2) img {
-        height: 20rem;
+    
+    .Parte:nth-child(3) {
+        align-items: flex-end;
     }
+    
+    .Parte:nth-child(3) p {
+        text-align: right;
+    }
+    
+    @media (max-width: 1200px) {
+        #MisionVision {
+            margin-top: 4rem;
+        }
+        .Barra2 {
+            width: 80%;
+        }
+        #MisionVision h1 {
+            font-size: 3rem;
+        }
+        #MisionVision p {
+            font-size: 1rem
+        }
+    }
+    /** Características ***/
+    
+    #T_Caract {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem;
+    }
+    
+    #T_Caract h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 4rem;
+        padding: 2rem 0rem;
+    }
+    
+    #T_Caract .Barra {
+        height: 0.2rem;
+    }
+    
+    @media (max-width: 600px) {
+        #T_Caract h1 {
+            font-size: 2.8rem;
+        }
+    }
+    
+    #Caracteristicas {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    
+    #Caracteristicas p {
+        width: 65%;
+        font-size: 1.2rem;
+    }
+    
+    #Caracteristicas02 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #Caracteristicas02 p {
+        width: 65%;
+        font-size: 1.2rem;
+    }
+    
+    .Seccion01,
+    .Seccion02 {
+        width: 100%;
+    }
+    
+    @media (max-width: 991px) {
+        #Caracteristicas,
+        #Caracteristicas02 {
+            display: block;
+        }
+    }
+    
+    .Medio {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Barra02 {
+        width: 80%;
+        height: 0.2rem;
+        background-color: #ffffff;
+    }
+    /*** Sección Function ***/
+    
+    .Seccion01,
+    .Seccion02 {
+        margin: 0rem;
+    }
+    
+    .Seccion01 h1 {
+        text-align: right;
+        padding-bottom: 1rem;
+    }
+    
+    .Seccion01 p {
+        text-align: right;
+    }
+    
+    .Seccion01 .img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Seccion01 .col-12:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .Seccion01 .col-12:nth-child(2) {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    #Caracteristicas img {
+        height: 27rem;
+    }
+    
+    #Caracteristicas02 img {
+        height: 27rem;
+    }
+    
+    .Seccion02 h1 {
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+    
+    .Seccion02 p {
+        text-align: left;
+    }
+    
+    .Seccion02 .col-12:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .Seccion02 .col-12:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    @media (max-width: 991px) {
+        #Caracteristicas h1 {
+            text-align: center;
+        }
+        #Caracteristicas p {
+            text-align: justify;
+        }
+        #Caracteristicas img {
+            height: 20rem;
+        }
+        #Caracteristicas02 {
+            margin-top: 20rem;
+            margin-bottom: 24rem;
+        }
+        #Caracteristicas02 h1 {
+            text-align: center;
+        }
+        #Caracteristicas02 p {
+            text-align: justify;
+        }
+        #Caracteristicas02 img {
+            height: 20rem;
+        }
+        .Seccion01 .col-12:nth-child(2) {
+            justify-content: center;
+        }
+        .Seccion01 .col-12:nth-child(2) img {
+            margin-top: 0rem;
+        }
+        .Seccion01 .col-12:nth-child(1) {
+            align-items: center;
+        }
+        .Seccion02 .col-12:nth-child(1) {
+            justify-content: center;
+        }
+        .Seccion02 .col-12:nth-child(2) {
+            align-items: center;
+        }
+        .Seccion02 .col-12:nth-child(1) img {
+            position: absolute;
+            margin-top: 15rem;
+            height: 20rem;
+        }
+        .Barra02 {
+            height: 0rem;
+        }
+        .Separador {
+            background-color: #ffffff;
+            width: 80%;
+            height: 0.1rem;
+            margin: 2rem 0rem;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .Seccion02 .col-12:nth-child(1) img {
+            position: absolute;
+            margin-top: 20rem;
+        }
+    }
+    /****************** NUESTRA TIERRA *********************/
+    
+    #Ubicacion {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url(./img/B_MisionVision.png);
+        background-position: center;
+        background-size: cover;
+        padding: 0rem;
+        margin: 4rem 0rem;
+    }
+    
+    .T_Ubicacion {
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .T_Ubicacion h3 {
+        font-size: 2.5rem;
+    }
+    
     .T_Ubicacion h1 {
-        font-size: 3rem;
         text-align: center;
+        font-size: 4rem;
     }
-}
-
-@media (max-width: 1200px) {
+    
+    .D_Ubicacion {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .D_Ubicacion h1 {
+        font-size: 3.5rem;
+    }
+    
+    .D_Ubicacion p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .D_Ubicacion img {
+        height: 25rem;
+    }
+    
+    .T_Descrip {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    
     .D_Ubicacion .col-12:nth-child(1) {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
-}
-
-
-/************ GALERÍA *************/
-
-
-/*********** NUESTRA TIERRA ***********/
-
-#VisitanosPage {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-}
-
-@media (max-width: 500px) {
+    
+    .D_Ubicacion .col-12:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+    
+    @media (max-width: 1500px) {
+        .D_Ubicacion .col-12:nth-child(1) h1 {
+            font-size: 2.5rem;
+        }
+        .D_Ubicacion .col-12:nth-child(1) p {
+            font-size: 1.2rem;
+        }
+        .D_Ubicacion .col-12:nth-child(2) img {
+            height: 20rem;
+        }
+        .T_Ubicacion h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 1200px) {
+        .D_Ubicacion .col-12:nth-child(1) {
+            text-align: center;
+        }
+    }
+    /************ GALERÍA *************/
+    /*********** NUESTRA TIERRA ***********/
+    
     #VisitanosPage {
-        height: 70rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
     }
-}
-
-#VisitanosPage02 {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -3.5rem;
-    margin-bottom: 6rem;
-}
-
-@media (max-width: 500px) {
+    
+    @media (max-width: 500px) {
+        #VisitanosPage {
+            height: 70rem;
+        }
+    }
+    
     #VisitanosPage02 {
-        height: 39.5rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -3.5rem;
+        margin-bottom: 6rem;
     }
-    .T_Visitanos p {
-        font-size: 0.8rem;
+    
+    @media (max-width: 500px) {
+        #VisitanosPage02 {
+            height: 39.5rem;
+        }
+        .T_Visitanos p {
+            font-size: 0.8rem;
+        }
     }
-}
-
-.T_Visitanos {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-}
-
-.T_Visitanos h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    width: 30%;
-}
-
-.T_Visitanos h4 {
-    font-size: 0.6;
-}
-
-@media (max-width: 991px) {
-    .T_Visitanos h1 {
-        width: 60%;
-    }
-}
-
-.ImagenesV {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    width: 90%;
-    align-items: center;
-}
-
-.Fila01 {
-    height: auto;
-    width: 100%;
-}
-
-.Foto01 {
-    background-image: url(./img/Tierra_09.jpg);
-    background-size: cover;
-    width: 30rem;
-    background-position: center;
-    margin-right: 0.6rem;
-}
-
-.Foto01:hover {
-    transition: 0.2s;
-    transform: scale(1.05) translateX(-0.5rem) translateY(-1.3rem);
-}
-
-.Foto02 {
-    background-image: url(./img/Tierra_04.jpg);
-    background-size: cover;
-    height: 12rem;
-    background-position: center;
-    margin-bottom: 0.6rem;
-}
-
-.Foto02:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Foto03 {
-    background-image: url(./img/Tierra_02.jpg);
-    background-size: cover;
-    height: 12rem;
-    background-position: center;
-}
-
-.Foto03:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Foto04 {
-    background-image: url(./img/Tierra_08.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 0.6rem;
-}
-
-.Foto04:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Fila02 {
-    height: auto;
-    margin-top: 0.6rem;
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
-.Foto05 {
-    background-image: url(./img/Tierra_05.jpg);
-    background-size: cover;
-    height: 25rem;
-    background-position: center;
-}
-
-.Foto05:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Foto06 {
-    background-image: url(./img/Tierra_14.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 0rem 0.6rem;
-}
-
-.Foto06:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1.3rem) translateY(-1.3rem);
-}
-
-.Foto07 {
-    background-image: url(./img/Tierra_13.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.Foto07:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-
-/********************/
-
-.Foto08 {
-    background-image: url(./img/Tierra_06.jpg);
-    background-size: cover;
-    width: 30rem;
-    background-position: center;
-    margin-right: 0.6rem;
-}
-
-.Foto08:hover {
-    transition: 0.2s;
-    transform: scale(1.05) translateX(-0.5rem) translateY(-1.3rem);
-}
-
-.Foto09 {
-    background-image: url(./img/Tierra_25.jpg);
-    background-size: cover;
-    height: 12rem;
-    background-position: center;
-    margin-bottom: 0.6rem;
-}
-
-.Foto09:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Foto10 {
-    background-image: url(./img/Tierra_07.jpg);
-    background-size: cover;
-    height: 12rem;
-    background-position: center;
-}
-
-.Foto10:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Foto11 {
-    background-image: url(./img/Tierra_24.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-left: 0.6rem;
-}
-
-.Foto11:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Fila02 {
-    height: auto;
-    margin-top: 0.6rem;
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
-.Foto12 {
-    background-image: url(./img/Tierra_21.jpg);
-    background-size: cover;
-    height: 25rem;
-    background-position: center;
-}
-
-.Foto12:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-.Foto13 {
-    background-image: url(./img/Tierra_19.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 0rem 0.6rem;
-}
-
-.Foto13:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1.3rem) translateY(-1.3rem);
-}
-
-.Foto14 {
-    background-image: url(./img/Tierra_15.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.Foto14:hover {
-    transition: 0.2s;
-    transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
-}
-
-
-/*******************/
-
-
-/********** CONTACTANOS **********/
-
-#ContactoPage {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.Barra {
-    width: 90%;
-    height: 0.1rem;
-    background-color: #ffffff;
-}
-
-.Datos {
-    width: 80%;
-}
-
-.Datos h1 {
-    font-weight: 700;
-}
-
-.P_Direccion {
-    margin-top: 1.5rem;
-}
-
-.Datos img {
-    max-height: 10rem;
-}
-
-.LogoFinal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 991px) {
-    .Datos {
+    
+    .T_Visitanos {
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        width: 100%;
+        justify-content: center;
     }
-    .Datos img {
-        max-height: 8rem;
+    
+    .T_Visitanos h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        width: 30%;
+    }
+    
+    .T_Visitanos h4 {
+        font-size: 0.6;
+    }
+    
+    @media (max-width: 991px) {
+        .T_Visitanos h1 {
+            width: 60%;
+        }
+    }
+    
+    .ImagenesV {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 90%;
+        align-items: center;
+    }
+    
+    .Fila01 {
+        height: auto;
+        width: 100%;
+    }
+    
+    .Foto01 {
+        background-image: url(./img/Tierra_09.jpg);
+        background-size: cover;
+        width: 30rem;
+        background-position: center;
+        margin-right: 0.6rem;
+    }
+    
+    .Foto01:hover {
+        transition: 0.2s;
+        transform: scale(1.05) translateX(-0.5rem) translateY(-1.3rem);
+    }
+    
+    .Foto02 {
+        background-image: url(./img/Tierra_04.jpg);
+        background-size: cover;
+        height: 12rem;
+        background-position: center;
+        margin-bottom: 0.6rem;
+    }
+    
+    .Foto02:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Foto03 {
+        background-image: url(./img/Tierra_02.jpg);
+        background-size: cover;
+        height: 12rem;
+        background-position: center;
+    }
+    
+    .Foto03:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Foto04 {
+        background-image: url(./img/Tierra_08.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-left: 0.6rem;
+    }
+    
+    .Foto04:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Fila02 {
+        height: auto;
+        margin-top: 0.6rem;
         margin-bottom: 2rem;
+        width: 100%;
     }
+    
+    .Foto05 {
+        background-image: url(./img/Tierra_05.jpg);
+        background-size: cover;
+        height: 25rem;
+        background-position: center;
+    }
+    
+    .Foto05:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Foto06 {
+        background-image: url(./img/Tierra_14.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0rem 0.6rem;
+    }
+    
+    .Foto06:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1.3rem) translateY(-1.3rem);
+    }
+    
+    .Foto07 {
+        background-image: url(./img/Tierra_13.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .Foto07:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    /********************/
+    
+    .Foto08 {
+        background-image: url(./img/Tierra_06.jpg);
+        background-size: cover;
+        width: 30rem;
+        background-position: center;
+        margin-right: 0.6rem;
+    }
+    
+    .Foto08:hover {
+        transition: 0.2s;
+        transform: scale(1.05) translateX(-0.5rem) translateY(-1.3rem);
+    }
+    
+    .Foto09 {
+        background-image: url(./img/Tierra_25.jpg);
+        background-size: cover;
+        height: 12rem;
+        background-position: center;
+        margin-bottom: 0.6rem;
+    }
+    
+    .Foto09:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Foto10 {
+        background-image: url(./img/Tierra_07.jpg);
+        background-size: cover;
+        height: 12rem;
+        background-position: center;
+    }
+    
+    .Foto10:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Foto11 {
+        background-image: url(./img/Tierra_24.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-left: 0.6rem;
+    }
+    
+    .Foto11:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Fila02 {
+        height: auto;
+        margin-top: 0.6rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    
+    .Foto12 {
+        background-image: url(./img/Tierra_21.jpg);
+        background-size: cover;
+        height: 25rem;
+        background-position: center;
+    }
+    
+    .Foto12:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    
+    .Foto13 {
+        background-image: url(./img/Tierra_19.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0rem 0.6rem;
+    }
+    
+    .Foto13:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1.3rem) translateY(-1.3rem);
+    }
+    
+    .Foto14 {
+        background-image: url(./img/Tierra_15.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .Foto14:hover {
+        transition: 0.2s;
+        transform: scale(1.1) translateX(-1rem) translateY(-1.3rem);
+    }
+    /*******************/
+    /************** REGISTRO DE USUSARIO **************/
+    
+    #RegUsuario {
+        height: auto;
+        margin: 2rem 0rem;
+    }
+    
+    .T_RegUs {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .T_RegUs h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        width: 30%;
+    }
+    
+    .Box-Form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Formulario {
+        max-width: 30rem;
+    }
+    
+    .Formulario label,
+    small {
+        color: #ffffff;
+    }
+    
+    @media (max-width: 991px) {
+        .T_RegUs h1 {
+            width: 60%;
+            font-size: 2.5rem;
+        }
+    }
+    /********** CONTACTANOS **********/
+    
+    #ContactoPage {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .Barra {
+        width: 90%;
+        height: 0.1rem;
+        background-color: #ffffff;
+    }
+    
+    .Datos {
+        width: 80%;
+    }
+    
+    .Datos h1 {
+        font-weight: 700;
+    }
+    
     .P_Direccion {
-        margin-top: -1.5rem;
+        margin-top: 1.5rem;
     }
-    #ContactoPage {
-        height: auto;
+    
+    .Datos img {
+        max-height: 10rem;
     }
-}
-
-@media (max-width: 600px) {
-    #ContactoPage {
-        height: auto;
+    
+    .LogoFinal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-}
-
-.PieRedes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    height: 8rem;
-}
-
-.PieRedes .Redes {
-    display: flex;
-    justify-content: space-between;
-    width: 12rem;
-}
-
-.PieRedes .Redes a:hover {
-    transition: 0.2s;
-    transform: scale(1.5) translateY(-0.5rem);
-}
-
-.PieRedes .Redes a img {
-    max-height: 2.5rem;
-}
+    
+    @media (max-width: 991px) {
+        .Datos {
+            text-align: center;
+        }
+        .Datos img {
+            max-height: 8rem;
+            margin-bottom: 2rem;
+        }
+        .P_Direccion {
+            margin-top: -1.5rem;
+        }
+        #ContactoPage {
+            height: auto;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        #ContactoPage {
+            height: auto;
+        }
+    }
+    
+    .PieRedes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        height: 8rem;
+    }
+    
+    .PieRedes .Redes {
+        display: flex;
+        justify-content: space-between;
+        width: 12rem;
+    }
+    
+    .PieRedes .Redes a:hover {
+        transition: 0.2s;
+        transform: scale(1.5) translateY(-0.5rem);
+    }
+    
+    .PieRedes .Redes a img {
+        max-height: 2.5rem;
+    }
